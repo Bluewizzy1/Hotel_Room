@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./tailwind.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Hotel Boooking</title>
+  </head>
+
+  <body>
+    <section
+      class="flex justify-between px-[20px] items-center bg-gradient-to-b from-blue-500 to-blue-900 font-bold text-white"
+    >
+      <div class="flex flex-col relative group">
+        <div class="flex items-center">
+          <img class="h-10 w-10 rounded-full" src="./asssets/Blue.jpg" alt="" />
+          <p class="border-2 border-solid bg-gray-500 rounded-full p-1 m-4">
+            JW
+          </p>
+          <p class="">Hi Wizzy,</p>
+        </div>
+
+        <div
+          class="hidden rounded group-hover:flex divide-y divide-gray-700 text-gray-700 absolute top-[67px] bg-white flex-col w-[200px]"
+        >
+          <button class="font-bold h-8 w-full h-[50px] hover:bg-gray-300">
+            Go to dashboard
+          </button>
+          <button class="font-bold h-8 w-full h-[50px] hover:bg-gray-300">
+            See rooms
+          </button>
+        </div>
+      </div>
+      <ul class="flex space-x-10">
+        <li class="hover:underline cursor-pointer">Features</li>
+        <li class="hover:underline cursor-pointer">Pricing</li>
+      </ul>
+    </section>
+
+    <section
+      class="bg-[url(./asssets/hotel-breakfast.png)] h-screen w-full bg-no-repeat text-white font-bold"
+    >
+      <div class="h-screen bg-opacity-25 bg-black">
+        <div class="">
+          <h1 class="text-4xl text-blue-700 p-2 text-center">
+            BLUEWORLD HOTELS
+          </h1>
+        </div>
+
+        <div class="p-80 flex flex-between space-x-10">
+          <div>
+            <div class="ml-10 bg-black h-8 w-8 rounded-full"></div>
+            <p>
+              Our hotel prioritises environmental friendlineess. We offer pure
+              and cozy atmosphere, very close to nature.
+            </p>
+          </div>
+
+          <div>
+            <div class="ml-10 bg-black h-8 w-8 rounded-full"></div>
+            <p>
+              Our hotel is located in a very secured location in town. Your
+              safety is our concern.
+            </p>
+          </div>
+
+          <div>
+            <div class="ml-10 bg-black h-8 w-8 rounded-full"></div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis, architecto!
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-20 pl-4">
+      <div class="flex justify-between">
+        <p class="font-bold text-2xl">OUR ROOMS</p>
+        <button
+          class="text-black border-2 bg-green-500 text-white font-bold h-8 w-28 rounded-md mb-5 hover:bg-green-600"
+        >
+          Add room
+        </button>
+      </div>
+      <!-- <ul class="flex justify-between space-x-10 ll-room-card"> -->
+      <div class="overflow-x-auto [&::-webkit-scrollbar]:h-0">
+        <ul class="w-max pl-4">
+          <li class="inline-block mr-[20px] rounded-xl overflow-clip border border-gray-400 shadow-md h-auto">
+            <div class="flex flex-between">
+                <div class="relative">
+                  <img width="300" src="./asssets/room1.1.png" alt="" />
+                  <div class="absolute top-2 left-2 text-white bg-red-700 py-[6px] px-[10px] rounded-lg border-2 shadow-md">Booked</div>
+                </div>
+
+                <div class="px-8 py-4">
+                  <h2 class="text-xl font-semibold uppercase mb-4">Studio suite, 1 King Bed, Non Smoking</h2>
+                  <ul class="pl-4">
+                    <li>reserve now, pay later</li>
+                    <li>504 sq ft</li>
+                    <li>free wifi</li>
+                    <li>free self parking</li>
+                    <li>sleeps 4</li>
+                    <li>more details</li>
+                  </ul>
+
+                  <div class="flex justify-end">
+                    <button
+                      class="bg-teal-500 text-white font-bold p-1 rounded-md mt-10"
+                    >
+                      Book Now
+                    </button>
+                  </div>
+                </div>
+            </div>
+          </li>
+          <li class="inline-block mr-[20px] rounded-xl overflow-clip border border-gray-400 shadow-md h-auto">
+            <div class="flex flex-between">
+                <div class="relative">
+                  <img width="300" src="./asssets/room1.1.png" alt="" />
+                  <div class="absolute top-2 left-2 text-white bg-green-700 py-[6px] px-[10px] rounded-lg border-2 shadow-md">Available</div>
+                </div>
+
+                <div class="px-8 py-4">
+                  <h2 class="text-xl font-semibold uppercase mb-4">Studio suite, 1 King Bed, Non Smoking</h2>
+                  <ul class="pl-4">
+                    <li>reserve now, pay later</li>
+                    <li>504 sq ft</li>
+                    <li>free wifi</li>
+                    <li>free self parking</li>
+                    <li>sleeps 4</li>
+                    <li>more details</li>
+                  </ul>
+
+                  <div class="flex justify-end">
+                    <button
+                      class="bg-teal-500 text-white font-bold p-1 rounded-md mt-10"
+                    >
+                      Book Now
+                    </button>
+                  </div>
+                </div>
+            </div>
+          </li>
+          <li class="inline-block mr-[20px] rounded-xl overflow-clip border border-gray-400 shadow-md h-auto">
+            <div class="flex flex-between">
+                <div class="relative">
+                  <img width="300" src="./asssets/room1.1.png" alt="" />
+                  <div class="absolute top-2 left-2 text-white bg-red-700 py-[6px] px-[10px] rounded-lg border-2 shadow-md">Booked</div>
+                </div>
+
+                <div class="px-8 py-4">
+                  <h2 class="text-xl font-semibold uppercase mb-4">Studio suite, 1 King Bed, Non Smoking</h2>
+                  <ul class="pl-4">
+                    <li>reserve now, pay later</li>
+                    <li>504 sq ft</li>
+                    <li>free wifi</li>
+                    <li>free self parking</li>
+                    <li>sleeps 4</li>
+                    <li>more details</li>
+                  </ul>
+
+                  <div class="flex justify-end">
+                    <button
+                      class="bg-teal-500 text-white font-bold p-1 rounded-md mt-10"
+                    >
+                      Book Now
+                    </button>
+                  </div>
+                </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!--footer section-->
+    <footer class="mt-6 w-full text-center text-gray p-2">
+      <p>&copy; 2023. All right reserved</p>
+      <p>Blueworld Hotels</p>
+    </footer>
+  </body>
+</html>
